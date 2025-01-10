@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Header = () => (
+const Header: React.FC = () => (
   <header className="flex items-center justify-between p-4 bg-blue-600 text-white">
     <h1 className="text-2xl font-bold">ALX Project</h1>
     <nav className="flex gap-4">
@@ -10,6 +10,9 @@ const Header = () => (
       </Link>
       <Link href="/about">
         <a className="hover:underline">About</a>
+      </Link>
+      <Link href="/posts">
+        <a className="hover:underline">Posts</a>
       </Link>
     </nav>
   </header>

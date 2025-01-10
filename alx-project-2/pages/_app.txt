@@ -1,0 +1,16 @@
+import React from 'react';
+import Header from '../components/layout/Header'; // Import Header component
+import '../styles/globals.css'; // Import global styles
+
+const MyApp = ({ Component, pageProps }: { Component: React.ElementType; pageProps: any }) => {
+  return (
+    <div>
+      <Header /> {/* Include Header on all pages */}
+      <main className="p-4">
+        <Component {...pageProps} /> {/* Render the current page content */}
+      </main>
+    </div>
+  );
+};
+
+export default MyApp;
