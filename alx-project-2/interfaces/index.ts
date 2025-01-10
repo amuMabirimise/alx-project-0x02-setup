@@ -1,1 +1,5 @@
-// index.ts file
+export interface CardProps {
+    title: string;
+    content: string;
+  }
+  
